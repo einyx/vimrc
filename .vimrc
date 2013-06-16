@@ -2,17 +2,16 @@ set ruler
 set cursorline
 set number
 call pathogen#infect()
-syntax on
 
 filetype plugin indent on
-
-syntax enable
+""""
+call pathogen#incubate()
 
 "" Solarized stuff
 let g:solarized_termtrans = 1
 set background=dark
 colorscheme solarized
-""""
+
 "{{{Auto Commands
 
 " Automatically cd into the directory that the file is in
@@ -74,8 +73,8 @@ set expandtab
 set smarttab
 
 " Who wants an 8 character tab?  Not me!
-set shiftwidth=3
-set softtabstop=3
+set shiftwidth=2
+set softtabstop=2
 
 " Use english for spellchecking, but don't spellcheck by default
 if version >= 700
